@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">
+    <h2 style="display:inline; cursor: pointer">ISSUE TRACKER</h2>
+  </a>
+  <a>Hello,{{receiverName}}</a>
+  <button class="btn btn-danger" (click)="signOut()" *ngIf="isLogin">
+    Sign out
+  </button>
+</nav>
+<div class="container mt-5">
+  <router-outlet></router-outlet>
+</div>

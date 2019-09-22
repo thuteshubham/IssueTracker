@@ -1,0 +1,59 @@
+<div class="row p-0 m-0">
+  <div class="col-sm justify">
+    <img src="http://www.online-issues.com/files/2011/09/issueTracking.jpg" />
+  </div>
+
+  <div class="col-sm p-5">
+    <h2 class="form-signin-heading">Sign In</h2>
+
+    <br />
+
+    <span>Email: </span>
+
+    <label for="inputEmail" class="sr-only">Email address</label>
+
+    <input
+      type="email"
+      id="inputEmail"
+      class="form-control"
+      [(ngModel)]="email"
+      placeholder="Email address"
+      required
+    />
+
+    <br />
+
+    <span>Password: </span>
+
+    <label for="inputPassword" class="sr-only">Password</label>
+
+    <input
+      type="password"
+      id="inputPassword"
+      class="form-control"
+      [(ngModel)]="password"
+      placeholder="Password"
+      required
+    />
+
+    <br />
+
+    <button
+      class="btn btn-lg btn-primary btn-block"
+      type="submit"
+      (click)="signinFunction()"
+    >
+      Login
+    </button>
+
+    <a [routerLink]="['/forgot-password']">Forgot Password?</a>
+    <a
+      class="nav-link float-right"
+      (click)="goToSignUp()"
+      style="cursor:pointer"
+      >Not a User? Sign Up</a
+    >
+
+    <div class="col-sm"></div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+.image-block {
+  width: 32px;
+  height: 32px;
+  background-color: #6f42c1;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.value {
+  padding: 0px 5px;
+}
+
+.label {
+  font-weight: 500;
+}
+.inlinerow {
+  display: flex;
+  justify-content: space-between;
+}
+.inline {
+  display: inline;
+}
